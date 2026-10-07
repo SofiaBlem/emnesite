@@ -1,0 +1,137 @@
+/********** Forside **********/
+.grid_5-4 {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  grid-template-rows: 1fr auto 1fr;
+  gap: 10px;
+}
+
+.baggrundsbillede_forside {
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+
+.order {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+/********** Overlay menu **********/
+.grid_1-20 {
+  display: grid;
+  grid-template-columns: 1fr 20fr;
+  grid-template-rows: 1fr auto auto 1fr;
+  gap: 10px;
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.baggrundsbillede_menu {
+  grid-column: 2/3;
+  grid-row: 1/5;
+}
+
+.menu_overskrift {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+/********** Preview "Min Samling" **********/
+.grid_minsamling_1-7-20 {
+  display: grid;
+  grid-template-columns: 1fr 7fr 20fr;
+  grid-template-rows: 1fr auto auto auto 1fr;
+  gap: 10px;
+}
+
+.bgb_presamling1 {
+  grid-column: 2/4;
+  grid-row: 1/6;
+}
+
+.bgb_presamling2 {
+  grid-column: 3/4;
+  grid-row: 1/6;
+}
+
+.preminsamling_overskrift {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.grid_album {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.minsamling_botton {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+/********** Min Samling **********/
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/********** Preview "Opdag ny Vinyl" **********/
+.grid_1-7-20 {
+  display: grid;
+  grid-template-columns: 1fr 7fr 20fr;
+  grid-template-rows: 1fr auto 1fr;
+  gap: 10px;
+}
+
+.bgb_preopdag1 {
+  grid-column: 2/4;
+  grid-row: 1/6;
+}
+
+.bgb_preopdag2 {
+  grid-column: 3/4;
+  grid-row: 1/6;
+}
+
+.preopdag_overskrift {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+/********** Preview "Lær om Vinyl" **********/
+.grid_1-7-20 {
+  display: grid;
+  grid-template-columns: 1fr 7fr 20fr;
+  grid-template-rows: 1fr auto 1fr;
+  gap: 10px;
+}
+
+.bgb_prelær1 {
+  grid-column: 2/4;
+  grid-row: 1/6;
+}
+
+.bgb_prelær2 {
+  grid-column: 3/4;
+  grid-row: 1/6;
+}
+
+.prelær_overskrift {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
