@@ -9,13 +9,296 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  place-self: stretch;
+  object-fit: cover;
+}
+
+/********** Generelt **********/
+body {
+  background-color: #f3eddf;
+  background-image: url(../imgs/papirtekstur.webp);
+  background-blend-mode: lighten;
+}
+
+.tekst_lys_bg {
+  color: #1f1e1e;
+}
+
+.tekst_mørk_bg {
+  color: #f3eddf;
+}
+
+h1 {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4.5rem;
+  letter-spacing: 3%;
+  line-height: 80px;
+  margin-block: 32px 12px;
+}
+
+h2 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  margin-block: 32px 12px;
+}
+
+h3 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+  margin-block: 10px 5px;
+}
+
+p {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  text-wrap: balance;
+  margin-block: 0 16px;
 }
 
 /********** Forside **********/
+.baggrundsbillede_forside {
+  border-bottom-left-radius: 600px;
+  border-bottom-right-radius: 600px;
+  @media (width > 900px) {
+    border-radius: 600px 0 0 600px;
+  }
+}
+
+.index_indhold {
+  padding-inline: 50px 10px;
+  @media (width < 900px) {
+    padding-inline: 50px;
+    text-align: center;
+    text-wrap: balance;
+  }
+}
+
+.forside_h1 {
+  text-wrap: balance;
+  @media (max-width: 1129px) {
+    font-size: 3.5rem;
+    line-height: 60px;
+  }
+}
+
+.h1_andenfont {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3.5rem;
+  letter-spacing: normal;
+  line-height: 70px;
+  @media (max-width: 1129px) {
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+}
+
+.forside_botton {
+  background-color: #e17417;
+  border: none;
+  color: #1f1e1e;
+  padding: 15px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 35px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+.forside_p {
+  margin-block: 10px 20px;
+}
 
 /********** Overlay menu **********/
 .baggrundsbillede_menu {
-  border-radius: 525px 0 0 525px;
+  border-bottom-left-radius: 600px;
+  border-bottom-right-radius: 600px;
+  @media (width > 900px) {
+    border-radius: 600px 0 0 600px;
+  }
+}
+
+.card_link {
+  background-color: #e17417;
+  border: none;
+  color: #1f1e1e;
+  padding: 40px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 30%;
+  max-width: 300px;
+}
+
+.menu_overskrift {
+  text-align: center;
+  @media (max-width: 700px) {
+    font-size: 3.5rem;
+  }
+}
+
+.card_container {
+  @media (width < 900px) {
+    margin-block: 10px 150px;
+  }
+}
+
+.menu_indhold {
+  padding-inline: 100px;
+  @media (width > 900px) {
+    display: grid;
+    align-items: center;
+  }
+}
+
+.card_link h2 {
+  margin-block-start: 0;
 }
 
 /********** Preview "Min Samling" **********/
+.bgb_presamling1 {
+  filter: brightness(50%);
+  border-bottom-left-radius: 600px;
+  border-bottom-right-radius: 600px;
+  @media (width > 900px) {
+    border-radius: 600px 0 0 600px;
+    z-index: 1;
+  }
+}
+
+.bgb_presamling2 {
+  border-bottom-left-radius: 600px;
+  border-bottom-right-radius: 600px;
+  @media (width > 900px) {
+    border-radius: 600px 0 0 600px;
+    z-index: 10;
+  }
+}
+
+.presamling_indhold {
+  z-index: 20;
+  padding-inline: 80px;
+  padding-block: 20px 160px;
+  text-align: center;
+  @media (width > 900px) {
+    padding-block: 0;
+  }
+}
+
+.cover {
+  border-radius: 25%;
+}
+
+.minsamling_botton {
+  background-color: #e17417;
+  color: #1f1e1e;
+  cursor: pointer;
+  border: none;
+  border-radius: 35px;
+  width: fit-content;
+  align-self: center;
+  padding: 15px 35px;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+.cover_container {
+  margin-block: 20px;
+}
+
+/********** Min Samling **********/
+.body_minsamling {
+  background-color: #254c54;
+  background-image: none;
+}
+
+.minsamling_h1 {
+  text-align: center;
+  @media (width < 530px) {
+    font-size: 3.5rem;
+  }
+  @media (width < 450px) {
+    font-size: 3rem;
+  }
+}
+
+.sotering_button {
+  background-color: none;
+  color: #f3eddf;
+  cursor: pointer;
+  border: #a9a7a3 solid 1px;
+  border-radius: 35px;
+  width: fit-content;
+  align-self: center;
+  padding: 8px 18px;
+  display: block;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+.album_container {
+  text-align: center;
+}
+
+.cover_billede {
+  border-radius: 50px;
+}
+
+.placeholder_cover {
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: #587e86;
+  border-radius: 50px;
+}
+
+/********** Preview "Opdag ny Vinyl" og "Lær om Vinyl" **********/
+.bgb1_pre {
+  filter: brightness(50%);
+  z-index: 1;
+  border-bottom-left-radius: 600px;
+  border-bottom-right-radius: 600px;
+  @media (width > 900px) {
+    border-radius: 600px 0 0 600px;
+  }
+}
+
+.bgb2_pre {
+  border-bottom-left-radius: 600px;
+  border-bottom-right-radius: 600px;
+  z-index: 10;
+  @media (width > 900px) {
+    border-radius: 600px 0 0 600px;
+  }
+}
+
+.pre_overskrift {
+  z-index: 20;
+  padding-inline: 60px 60px;
+  text-align: center;
+  align-self: center;
+}

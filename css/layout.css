@@ -1,137 +1,191 @@
 /********** Forside **********/
 .grid_5-4 {
-  display: grid;
-  grid-template-columns: 5fr 4fr;
-  grid-template-rows: 1fr auto 1fr;
-  gap: 10px;
+  @media (width > 900px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    min-height: 100vh;
+  }
 }
 
 .baggrundsbillede_forside {
-  grid-column: 2/3;
-  grid-row: 1/4;
+  @media (width > 900px) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 }
 
-.order {
-  grid-column: 1/2;
-  grid-row: 2/3;
+.index_indhold {
+  @media (width > 900px) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 
 /********** Overlay menu **********/
-.grid_1-20 {
+.grid_menu {
   display: grid;
-  grid-template-columns: 1fr 20fr;
-  grid-template-rows: 1fr auto auto 1fr;
-  gap: 10px;
-}
-
-.grid_1-1-1 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column: 2/3;
-  grid-row: 3/4;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7fr 1fr;
+  @media (width > 900px) {
+    grid-template-columns: 1fr 20fr;
+  }
 }
 
 .baggrundsbillede_menu {
-  grid-column: 2/3;
-  grid-row: 1/5;
+  filter: brightness(50%);
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 1;
+  @media (width > 900px) {
+    grid-column: 2/3;
+  }
 }
 
-.menu_overskrift {
-  grid-column: 2/3;
-  grid-row: 2/3;
+.menu_indhold {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 10;
+  @media (width > 900px) {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.card_container {
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  @media (width > 900px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /********** Preview "Min Samling" **********/
-.grid_minsamling_1-7-20 {
+.grid_minsamling_1-7-20,
+.grid_mobilpresamling {
   display: grid;
-  grid-template-columns: 1fr 7fr 20fr;
-  grid-template-rows: 1fr auto auto auto 1fr;
-  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6fr 1.5fr 0.5fr;
+  @media (width > 900px) {
+    grid-template-columns: 1fr 7fr 20fr;
+    grid-template-rows: 1fr auto 1fr;
+    gap: 10px;
+  }
 }
 
 .bgb_presamling1 {
-  grid-column: 2/4;
-  grid-row: 1/6;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  z-index: 1;
+  @media (width > 900px) {
+    grid-column: 2/4;
+    grid-row: 1/5;
+  }
 }
 
 .bgb_presamling2 {
-  grid-column: 3/4;
-  grid-row: 1/6;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 10;
+  @media (width > 900px) {
+    grid-column: 3/4;
+    grid-row: 1/5;
+  }
 }
 
-.preminsamling_overskrift {
-  grid-column: 3/4;
-  grid-row: 2/3;
+.presamling_indhold {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 20;
+  @media (width > 900px) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
 }
 
-.grid_album {
+.cover_container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
-  grid-column: 3/4;
-  grid-row: 3/4;
-}
-
-.minsamling_botton {
-  grid-column: 3/4;
-  grid-row: 4/5;
+  @media (width > 900px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
 }
 
 /********** Min Samling **********/
+.main_minsamling {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 30px;
+}
+
 .grid_1-1-1 {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, max-content);
+  justify-content: center;
   gap: 20px;
 }
 
 .grid_1-1-1-1 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
+  @media (width > 900px) {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
-/********** Preview "Opdag ny Vinyl" **********/
+/********** Preview "Opdag ny Vinyl" og "Lær om Vinyl" **********/
 .grid_1-7-20 {
   display: grid;
-  grid-template-columns: 1fr 7fr 20fr;
-  grid-template-rows: 1fr auto 1fr;
-  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6fr 1.5fr 0.5fr;
+  @media (width > 900px) {
+    grid-template-columns: 1fr 7fr 20fr;
+    grid-template-rows: 1fr auto 1fr;
+    gap: 10px;
+  }
 }
 
-.bgb_preopdag1 {
-  grid-column: 2/4;
-  grid-row: 1/6;
+.bgb1_pre {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  z-index: 1;
+  @media (width > 900px) {
+    grid-column: 2/4;
+    grid-row: 1/6;
+  }
 }
 
-.bgb_preopdag2 {
-  grid-column: 3/4;
-  grid-row: 1/6;
+.bgb2_pre {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 10;
+  @media (width > 900px) {
+    grid-column: 3/4;
+    grid-row: 1/6;
+  }
 }
 
-.preopdag_overskrift {
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-
-/********** Preview "Lær om Vinyl" **********/
-.grid_1-7-20 {
-  display: grid;
-  grid-template-columns: 1fr 7fr 20fr;
-  grid-template-rows: 1fr auto 1fr;
-  gap: 10px;
-}
-
-.bgb_prelær1 {
-  grid-column: 2/4;
-  grid-row: 1/6;
-}
-
-.bgb_prelær2 {
-  grid-column: 3/4;
-  grid-row: 1/6;
-}
-
-.prelær_overskrift {
-  grid-column: 3/4;
-  grid-row: 2/3;
+.pre_overskrift {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 20;
+  @media (width > 900px) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
 }
