@@ -78,6 +78,7 @@ p {
   padding-inline: 50px 10px;
   @media (width < 900px) {
     padding-inline: 50px;
+    padding-bottom: 50px;
     text-align: center;
     text-wrap: balance;
   }
@@ -88,6 +89,9 @@ p {
   @media (max-width: 1129px) {
     font-size: 3.5rem;
     line-height: 60px;
+  }
+  @media (width < 530px) {
+    font-size: 3rem;
   }
 }
 
@@ -148,8 +152,11 @@ p {
 
 .menu_overskrift {
   text-align: center;
-  @media (max-width: 700px) {
+  @media (width < 810px) {
     font-size: 3.5rem;
+  }
+  @media (width < 530px) {
+    font-size: 3rem;
   }
 }
 
@@ -160,8 +167,9 @@ p {
 }
 
 .menu_indhold {
-  padding-inline: 100px;
+  padding-inline: 20px;
   @media (width > 900px) {
+    padding-inline: 100px;
     display: grid;
     align-items: center;
   }
@@ -193,11 +201,21 @@ p {
 
 .presamling_indhold {
   z-index: 20;
-  padding-inline: 80px;
+  padding-inline: 20px;
   padding-block: 20px 160px;
   text-align: center;
   @media (width > 900px) {
+    padding-inline: 80px;
     padding-block: 0;
+  }
+}
+
+.preminsamling_overskrift {
+  @media (width < 660px) {
+    font-size: 3.5rem;
+  }
+  @media (width < 530px) {
+    font-size: 3rem;
   }
 }
 
@@ -263,6 +281,7 @@ p {
 
 .album_container {
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .cover_billede {
@@ -301,4 +320,52 @@ p {
   padding-inline: 60px 60px;
   text-align: center;
   align-self: center;
+  @media (width < 660px) {
+    font-size: 3.5rem;
+  }
+  @media (width < 530px) {
+    font-size: 3rem;
+  }
+}
+
+/********** Footer **********/
+footer {
+  background-color: #24474e;
+  color: #f3eddf;
+  padding: 30px 40px;
+}
+
+.footer_nav a {
+  color: #f3eddf;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: center;
+  &:hover {
+    color: #e17417;
+  }
+}
+
+.footer_socials a {
+  color: #f3eddf;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  &:hover {
+    color: #e17417;
+  }
+}
+
+.footer_copyright {
+  color: #f3eddf;
+  opacity: 0.8;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.95rem;
+  text-align: center;
 }
