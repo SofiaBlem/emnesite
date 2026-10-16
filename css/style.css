@@ -328,6 +328,55 @@ p {
   }
 }
 
+/********** Menu **********/
+nav a {
+  color: #f3eddf;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  transition: color 0.3s;
+  &:hover {
+    color: #e17417;
+  }
+}
+
+.logo {
+  color: #1f1e1e;
+  text-decoration: none;
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+}
+
+.logo_lys {
+  color: #f3eddf;
+  text-decoration: none;
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+}
+
+.close_btn {
+  color: #f3eddf;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.menu_btn {
+  color: #f3eddf;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.fremhæv {
+  color: #e17417;
+  font-weight: 700;
+}
+
 /********** Footer **********/
 footer {
   background-color: #24474e;
