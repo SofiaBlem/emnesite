@@ -122,6 +122,12 @@ p {
   font-weight: 400;
   font-style: normal;
   font-size: 1.2rem;
+
+  transition: transform 0.6 ease;
+}
+
+.forside_botton:hover {
+  transform: scale(1.05);
 }
 
 .forside_p {
@@ -148,6 +154,12 @@ p {
   cursor: pointer;
   border-radius: 30%;
   max-width: 300px;
+
+  transition: transform 0.6 ease;
+}
+
+.card_link:hover {
+  transform: scale(1.05);
 }
 
 .menu_overskrift {
@@ -240,6 +252,12 @@ p {
   font-weight: 400;
   font-style: normal;
   font-size: 1.2rem;
+
+  transition: transform 0.6 ease;
+}
+
+.minsamling_botton:hover {
+  transform: scale(1.05);
 }
 
 .cover_container {
@@ -282,10 +300,33 @@ p {
 .album_container {
   text-align: center;
   padding-bottom: 50px;
+  cursor: pointer;
 }
 
-.cover_billede {
+.album {
+  position: relative;
+  overflow: hidden;
   border-radius: 50px;
+}
+
+.album_overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #e17417cc;
+  color: #f3eddf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.album:hover .album_overlay {
+  opacity: 1;
 }
 
 .placeholder_cover {
@@ -349,6 +390,10 @@ nav a {
   font-weight: 400;
   font-style: normal;
   font-size: 1.4rem;
+  @media (width < 900px) {
+    color: #f3eddf;
+    font-size: 1.8rem;
+  }
 }
 
 .logo_lys {
@@ -358,6 +403,9 @@ nav a {
   font-weight: 400;
   font-style: normal;
   font-size: 1.4rem;
+  @media (width < 900px) {
+    font-size: 1.8rem;
+  }
 }
 
 .close_btn {
