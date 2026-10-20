@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Oi&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon (1).ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Min Samling</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/layout.css">
@@ -12,41 +19,80 @@
 
 <body>
     <header>
-        <div class="logo">
-            <a href="">...</a>
-        </div>
+        <a class="logo" href="index.html">Logo</a>
         <nav>
-            <ul class="menu">
-                <li><a href="index.html">Forside</a></li>
-                <li><a href="min_samling.html">Min Samling</a></li>
-                <li><a href="preview_opdagnyvinyl.html">Opdag ny Vinyl</a></li>
-                <li><a href="preview_læromvinyl.html">Lær om Vinyl</a></li>
-            </ul>
+            <a href="index.html">Forside</a>
+            <a href="min_samling.html">Min Samling</a>
+            <a href="preview_opdagnyvinyl.html">Opdag ny Vinyl</a>
+            <a href="preview_læromvinyl.html">Lær om Vinyl</a>
         </nav>
+        <a class="close_btn" href="overlay_menu.html" aria-label="luk side">
+            <i class="fa-solid fa-xmark"></i>
+        </a>
     </header>
 
     <main>
-        <div class="grid_1-7-20">
-            <h1></h1>
-            <div class="grid_1-1-1">
-                <div>
-                    <img src="" alt="">
-                    <p></p>
+        <div class="grid_minsamling_1-7-20 grid_mobilpresamling">
+            <img class="bgb_presamling1" src="./imgs/Gemini_Generated_Image_txcvd5txcvd5txcv.webp"
+                alt="baggrundsbillede">
+            <img class="bgb_presamling2" src="./imgs/farve_container.webp" alt="container">
+            <div class="presamling_indhold">
+                <h1 class="tekst_mørk_bg preminsamling_overskrift">Min Samling</h1>
+                <div class="cover_container">
+                    <div>
+                        <img class="cover" src="./imgs/1658.jpg" alt="sade">
+                        <!-- <h3>Sade - The Best of Sade</h3>
+                    <p>Udgivelsesår: 1994
+                        Genre: Pop, Soul, Jazz
+                        Stand: VG+</p> -->
+                    </div>
+                    <div>
+                        <img class="cover" src="./imgs/michaeljacksonbad.jpg" alt="michaeljackson">
+                        <!-- <h3>Michael Jackson - Bad</h3>
+                    <p>Udgivelsesår: 1987
+                        Genre: Pop, Soul, Funk
+                        Stand: VG+</p> -->
+                    </div>
+                    <div>
+                        <img class="cover" src="./imgs/6817-depeche-mode-songs-of-faith-and-devotion-LP-1.jpg"
+                            alt="depechemode">
+                        <!-- <h3>Depeche Mode - Songs Of Faith And Devotion</h3>
+                    <p>Udgivelsesår: 1993
+                        Genre: Rock, Elektronisk, Synth-Pop
+                        Stand: VG+</p> -->
+                    </div>
+                    <div>
+                        <img class="cover" src="./imgs/134180-pink-floyd-dark-side-of-the-moon-LP-64f198fb82963.jpg"
+                            alt="pinkfloyd">
+                        <!-- <h3>Pink Floyd - The Dark Side Of The Moon</h3>
+                    <p>Udgivelsesår: 1973
+                        Genre: Rock, Psykedelisk Rock
+                        Stand: VG+</p> -->
+                    </div>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
+                <a class="minsamling_botton" href="min_samling.html">Se Alle Plader</a>
             </div>
-            <p>botton</p>
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="footer_container">
+            <nav class="footer_nav">
+                <a href="index.html">Forside</a>
+                <a href="min_samling.html">Min Samling</a>
+                <a href="preview_opdagnyvinyl.html">Opdag ny Vinyl</a>
+                <a href="preview_læromvinyl.html">Lær om Vinyl</a>
+            </nav>
+            <div class="footer_socials">
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <p class="footer_copyright">Needle & Groove @ 2026. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
